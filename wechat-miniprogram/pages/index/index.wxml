@@ -1,0 +1,14 @@
+<!-- wechat-miniprogram/pages/index/index.wxml -->
+<view class="container">
+  <view class="chat">
+    <view class="chat-bubble">用户: {{userMessage}}</view>
+    <view class="chat-bubble ai-bubble">AI: {{aiReply}}</view>
+  </view>
+
+  <input 
+    placeholder="输入你想学习的内容"
+    value="{{userMessage}}" 
+    bindinput="onMessageInput"
+  />
+  <button bindtap="onSend">发送</button>
+</view>
